@@ -25,3 +25,15 @@ Success Connecting NuitrackSDK with ML-Agents. (Inheriting Agent Class in FaceMa
 
 Currently training AI and I plan to connect Unity-chan, a 3d model.
 
+
+## Scene Location
+Assets\FaceTracker\FinalAssets\FaceTracking.unity
+
+
+##License
+ - NuitrackSDK
+Copyright © 2018 Tsukasa SUGIURA
+Distributed under the MIT License.
+
+ - Unity ML-Agents
+Apache License 2.0
