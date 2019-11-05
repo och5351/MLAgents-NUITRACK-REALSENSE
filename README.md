@@ -30,8 +30,9 @@ Currently training AI and I plan to connect Unity-chan, a 3d model.
 Assets\FaceTracker\FinalAssets\FaceTracking.unity
 
 
-##License
- - NuitrackSDK
+## License
+
+- NuitrackSDK
 Copyright © 2018 Tsukasa SUGIURA
 Distributed under the MIT License.
 
