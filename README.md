@@ -10,11 +10,11 @@ So I want sharing feels with A.I.
 This project is first step my hope.
 
 ## Used
- ###NUITRACK SDK(Face-track).
+ NUITRACK SDK(Face-track).
  
- ###INTEL REALSENS(d435i).
+ INTEL REALSENS(d435i).
  
- ###ML-Agents(Unity3D).
+ ML-Agents(Unity3D).
  
 ## Progress
 Success Connecting RealSense with Unity3D.
