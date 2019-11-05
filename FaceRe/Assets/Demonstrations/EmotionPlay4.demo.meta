@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 623fd2b60d354f64db8c59a3d0c45c97
+ScriptedImporter:
+  fileIDToRecycleName:
+    11400000: Assets/Demonstrations/EmotionPlay4.demo
+  externalObjects: {}
+  userData: ' (MLAgents.Demonstration)'
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 7bd65ce151aaa4a41a45312543c56be1, type: 3}
