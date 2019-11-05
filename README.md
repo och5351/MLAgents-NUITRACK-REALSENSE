@@ -32,9 +32,9 @@ Assets\FaceTracker\FinalAssets\FaceTracking.unity
 
 ## License
 
-- NuitrackSDK
+- NuitrackSDK : 
 Copyright © 2018 Tsukasa SUGIURA
 Distributed under the MIT License.
 
- - Unity ML-Agents
+ - Unity ML-Agents : 
 Apache License 2.0
