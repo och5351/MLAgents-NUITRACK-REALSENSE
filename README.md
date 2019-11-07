@@ -29,7 +29,7 @@ Currently training AI(Using Imitation Learning) and I plan to connect Unity-chan
 ## Scene Location
 Assets\FaceTracker\FinalAssets\FaceTracking.unity
 
-## Discription
+## Description
 
 This project have a 2 brain.
 One is Player brain in Unity's ML-Agents
