@@ -23,7 +23,7 @@ Success detecting target's emotions with applying NuitrackSDK.
 
 Success Connecting NuitrackSDK with ML-Agents. (Inheriting Agent Class in FaceManager class in NuitrackSDK).
 
-Currently training AI and I plan to connect Unity-chan, a 3d model.
+Currently training AI(Using Imitation Learning) and I plan to connect Unity-chan, a 3d model.
 
 
 ## Scene Location
