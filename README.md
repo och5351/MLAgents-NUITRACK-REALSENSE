@@ -7,7 +7,7 @@ Some sick people want shared there's feeling with anythings. Sometimes. But it's
 This project is first step my hope.
 
 ## Using
-NUITRACK SDK(Face-track).
+NUITRACK SDK(Face-tracking).
 
 INTEL REALSENS(d435i).
 
@@ -26,7 +26,7 @@ Currently, training AI(Using Imitation Learning), and I plan to connect Unity-ch
 Assets\FaceTracker\FinalAssets\FaceTracking.unity
 
 ## Description
-This project have a 2 brain. One is Player brain in Unity's ML-Agents. Another is Learning brain
+This project have a 2 brain. One is Player brain in Unity's ML-Agents. Another is Learning brain.
 
 This brain waiting at inputting 2 observing values. (one is emotion. Another is my intentions(It's just sending with key code)) free Nuitrack has a limit 3 minutes. So I can't progress Learning with NuitrackSDK.
 
