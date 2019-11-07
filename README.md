@@ -28,7 +28,7 @@ Assets\FaceTracker\FinalAssets\FaceTracking.unity
 ## Description
 This project have a 2 brain. One is Player brain in Unity's ML-Agents. Another is Learning brain.
 
-This brain waiting at inputting 2 observing values. (one is emotion. Another is my intentions(It's just sending with key code)) free Nuitrack has a limit 3 minutes. So I can't progress Learning with NuitrackSDK.
+This brain waiting at inputting 2 observing values. (one is emotion. Another is my intentions(It just sending with key code(free Nuitrack has a limit 3 minutes. So I can't progress Learning with NuitrackSDK.). but it will be changing)) 
 
 Anyway new brain(Learning Brain) imitate player brain's decision with imitation Learning.
 
