@@ -29,6 +29,18 @@ Currently training AI(Using Imitation Learning) and I plan to connect Unity-chan
 ## Scene Location
 Assets\FaceTracker\FinalAssets\FaceTracking.unity
 
+## Explanation
+
+This project have a 2 brain.
+One is Player brain in Unity's ML-Agents
+
+This brain waiting inputing 2 observing values. (one is emotion. another is my intentions(It's just sending with keycode))
+First free Nuitrack has a limit 3 minuites. so I can't progress Learning with NuitrackSDK. 
+
+Anyway imitation Learning new brain(Learning Brain) with player brain.
+
+In this case, Imitation Learning, player brain is teacher brain and the new brain, Learninig brain(In Unity's ML-Agents brain), be student brain. so student brain decise following teacher brain decision. 
+
 
 ## License
 
