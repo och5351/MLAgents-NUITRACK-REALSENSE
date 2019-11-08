@@ -68,6 +68,9 @@
     <Compile Include="Assets\FaceTracker\FinalAssets\Scripts\FaceSwitcher.cs" />
     <Compile Include="Assets\FaceTracker\FinalAssets\Scripts\MainAnimator.cs" />
     <Compile Include="Assets\FaceTracker\FinalAssets\Scripts\MyAgent.cs" />
+    <Compile Include="Assets\FaceTracker\FinalAssets\Scripts\Observable.cs" />
+    <Compile Include="Assets\FaceTracker\FinalAssets\Scripts\Observer.cs" />
+    <Compile Include="Assets\FaceTracker\motionsEvent\motionCheck.cs" />
     <Compile Include="Assets\ML-Agents\Examples\3DBall\Scripts\Ball3DAcademy.cs" />
     <Compile Include="Assets\ML-Agents\Examples\3DBall\Scripts\Ball3DAgent.cs" />
     <Compile Include="Assets\ML-Agents\Examples\3DBall\Scripts\Ball3DDecision.cs" />
@@ -257,7 +260,21 @@
     <Compile Include="Assets\Scripts\BallAcademy.cs" />
     <Compile Include="Assets\Scripts\ExpressAcademy.cs" />
     <Compile Include="Assets\Scripts\ExpressionAgent.cs" />
+    <Compile Include="Assets\UnityChan\Scripts\AutoBlink.cs" />
+    <Compile Include="Assets\UnityChan\Scripts\CameraController.cs" />
+    <Compile Include="Assets\UnityChan\Scripts\FaceUpdate.cs" />
+    <Compile Include="Assets\UnityChan\Scripts\IdleChanger.cs" />
+    <Compile Include="Assets\UnityChan\Scripts\IKCtrlRightHand.cs" />
+    <Compile Include="Assets\UnityChan\Scripts\RandomWind.cs" />
+    <Compile Include="Assets\UnityChan\Scripts\SpringBone.cs" />
+    <Compile Include="Assets\UnityChan\Scripts\SpringCollider.cs" />
+    <Compile Include="Assets\UnityChan\Scripts\SpringManager.cs" />
+    <Compile Include="Assets\UnityChan\Scripts\ThirdPersonCamera.cs" />
+    <Compile Include="Assets\UnityChan\Scripts\UnityChanControlScriptWithRgidBody.cs" />
+    <Compile Include="Assets\UnityChan\SplashScreen\Scripts\SplashScreen.cs" />
+    <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_eye.shader" />
     <None Include="Assets\ML-Agents\Plugins\Barracuda.Core\Barracuda\Resources\Experimental.compute" />
+    <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_fuku.shader" />
     <None Include="Assets\NuitrackSDK\Platform Changer\Manifests\GearVR\AndroidManifest_GearVR.xml" />
     <None Include="Assets\NuitrackSDK\Platform Changer\Manifests\Default\AndroidManifest_default.xml" />
     <None Include="Assets\ML-Agents\Plugins\Barracuda.Core\Barracuda\Resources\Conv.compute" />
@@ -265,36 +282,46 @@
     <None Include="Assets\ML-Agents\Plugins\Barracuda.Core\Barracuda\Resources\BarracudaReferenceImpl.compute" />
     <None Include="Assets\ML-Agents\Plugins\Barracuda.Core\Barracuda\Resources\Activation.compute" />
     <None Include="Assets\ML-Agents\Plugins\Barracuda.Core\Barracuda\Resources\Broadcast.compute" />
+    <None Include="Assets\UnityChan\Voice\unity-chan_voice_list.txt" />
     <None Include="Assets\NuitrackSDK\Nuitrack\Shaders\ui_zignore_image.shader" />
     <None Include="Assets\ML-Agents\Plugins\Barracuda.Core\Barracuda\Resources\DenseFP16.compute" />
     <None Include="Assets\ML-Agents\Plugins\Barracuda.Core\Barracuda\Resources\TexConv.compute" />
+    <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_fuku_ds.shader" />
+    <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_eye_blend.shader" />
     <None Include="Assets\ML-Agents\Plugins\Barracuda.Core\Barracuda\Resources\ConvOld.compute" />
     <None Include="Assets\NuitrackSDK\Nuitrack\Shaders\GvrUnlitTransparentOverlayColor.shader" />
+    <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hair_ds.shader" />
     <None Include="Assets\NuitrackSDK\Nuitrack\Shaders\ui_zigonre_font.shader" />
+    <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_akarami_blend.shader" />
     <None Include="Assets\NuitrackSDK\NuitrackDemos\Shaders\DepthSegmentationCustom.shader" />
     <None Include="Assets\ML-Agents\Plugins\Barracuda.Core\Barracuda\Resources\Tensor.cginc" />
     <None Include="Assets\NuitrackSDK\Tutorials\AR Football\README.txt" />
+    <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hair.shader" />
+    <None Include="Assets\UnityChan\Stage\Shader\AlphaMask.shader" />
+    <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_eyelash_blend.shader" />
     <None Include="Assets\NuitrackSDK\NuitrackDemos\Shaders\DiffuseVertexColored.shader" />
     <None Include="Assets\NuitrackSDK\VicoVRCalibrationRGB\Materials\Unlit-GS.shader" />
+    <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hada.shader" />
     <None Include="Assets\ML-Agents\Plugins\Barracuda.Core\Barracuda\Resources\FastNV.compute" />
+    <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hada_blend.shader" />
     <None Include="Assets\ML-Agents\Plugins\Barracuda.Core\Barracuda\Resources\Dense.compute" />
     <None Include="Assets\ML-Agents\Plugins\Barracuda.Core\Barracuda\Resources\Generic.compute" />
     <None Include="Assets\NuitrackSDK\NuitrackDemos\Shaders\CustomMesh.shader" />
     <None Include="Assets\NuitrackSDK\Tutorials\Box (VR Mobile)\README.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/och5351/FaceRe/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/och5351/Desktop/github_och/MLAgents-NUITRACK-REALSENSE/FaceRe/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/och5351/FaceRe/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/och5351/Desktop/github_och/MLAgents-NUITRACK-REALSENSE/FaceRe/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/och5351/FaceRe/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/och5351/Desktop/github_och/MLAgents-NUITRACK-REALSENSE/FaceRe/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/och5351/FaceRe/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/och5351/Desktop/github_och/MLAgents-NUITRACK-REALSENSE/FaceRe/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>C:/Users/och5351/FaceRe/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>C:/Users/och5351/Desktop/github_och/MLAgents-NUITRACK-REALSENSE/FaceRe/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -501,34 +528,34 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.9f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.Abstractions">
-      <HintPath>C:/Users/och5351/FaceRe/Assets/ML-Agents/Plugins/System.IO.Abstractions.dll</HintPath>
+      <HintPath>C:/Users/och5351/Desktop/github_och/MLAgents-NUITRACK-REALSENSE/FaceRe/Assets/ML-Agents/Plugins/System.IO.Abstractions.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.Abstractions.TestingHelpers">
-      <HintPath>C:/Users/och5351/FaceRe/Assets/ML-Agents/Plugins/System.IO.Abstractions.TestingHelpers.dll</HintPath>
+      <HintPath>C:/Users/och5351/Desktop/github_och/MLAgents-NUITRACK-REALSENSE/FaceRe/Assets/ML-Agents/Plugins/System.IO.Abstractions.TestingHelpers.dll</HintPath>
     </Reference>
     <Reference Include="Barracuda">
-      <HintPath>C:/Users/och5351/FaceRe/Assets/ML-Agents/Plugins/Barracuda.Core/Barracuda/Barracuda.dll</HintPath>
+      <HintPath>C:/Users/och5351/Desktop/github_och/MLAgents-NUITRACK-REALSENSE/FaceRe/Assets/ML-Agents/Plugins/Barracuda.Core/Barracuda/Barracuda.dll</HintPath>
     </Reference>
     <Reference Include="Google.Protobuf">
-      <HintPath>C:/Users/och5351/FaceRe/Assets/ML-Agents/Plugins/ProtoBuffer/Google.Protobuf.dll</HintPath>
+      <HintPath>C:/Users/och5351/Desktop/github_och/MLAgents-NUITRACK-REALSENSE/FaceRe/Assets/ML-Agents/Plugins/ProtoBuffer/Google.Protobuf.dll</HintPath>
     </Reference>
     <Reference Include="Grpc.Core">
-      <HintPath>C:/Users/och5351/FaceRe/Assets/ML-Agents/Plugins/ProtoBuffer/Grpc.Core.dll</HintPath>
+      <HintPath>C:/Users/och5351/Desktop/github_och/MLAgents-NUITRACK-REALSENSE/FaceRe/Assets/ML-Agents/Plugins/ProtoBuffer/Grpc.Core.dll</HintPath>
     </Reference>
     <Reference Include="System.Interactive.Async">
-      <HintPath>C:/Users/och5351/FaceRe/Assets/ML-Agents/Plugins/ProtoBuffer/System.Interactive.Async.dll</HintPath>
+      <HintPath>C:/Users/och5351/Desktop/github_och/MLAgents-NUITRACK-REALSENSE/FaceRe/Assets/ML-Agents/Plugins/ProtoBuffer/System.Interactive.Async.dll</HintPath>
     </Reference>
     <Reference Include="nuitrack.net">
-      <HintPath>C:/Users/och5351/FaceRe/Assets/NuitrackSDK/Nuitrack/NuitrackAssembly/nuitrack.net.dll</HintPath>
+      <HintPath>C:/Users/och5351/Desktop/github_och/MLAgents-NUITRACK-REALSENSE/FaceRe/Assets/NuitrackSDK/Nuitrack/NuitrackAssembly/nuitrack.net.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>C:/Users/och5351/FaceRe/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>C:/Users/och5351/Desktop/github_och/MLAgents-NUITRACK-REALSENSE/FaceRe/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>C:/Users/och5351/FaceRe/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/och5351/Desktop/github_och/MLAgents-NUITRACK-REALSENSE/FaceRe/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>C:/Users/och5351/FaceRe/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>C:/Users/och5351/Desktop/github_och/MLAgents-NUITRACK-REALSENSE/FaceRe/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.9f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>

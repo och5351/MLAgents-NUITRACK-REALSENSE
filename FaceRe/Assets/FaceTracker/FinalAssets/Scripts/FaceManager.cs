@@ -27,24 +27,58 @@ public enum EmotionType
     angry
 }
 
-public class FaceManager : Agent
+public class FaceManager : Agent, Observable
 {
-    
+    //옵저버 패턴 FaceManger -> Animator
+    public void RegisterObserver(Observer o) { }
+    public void UnregisterObserver(Observer o) { }
+    public void NotifyObservers() { }
+
     [SerializeField] Canvas canvas;
     [SerializeField] GameObject faceController;
     [SerializeField] SkeletonController skeletonController;
     List<FaceController> faceControllers = new List<FaceController>();
     Instances[] faces;
     FaceInfo faceInfo;
-    
+
 
     //표정 변화값 변수
-    public static bool inDisplay = false;   
+    int expressionSelectNum;
+    int m_expressionSelectNum;
+    public int expressionSelectNumSend
+    {
+        get
+        {
+            return m_expressionSelectNum;
+        }
+        set
+        {
+            m_expressionSelectNum = expressionSelectNum;
+        }
+    }
+    bool inDisplay;
+    bool m_inDisplay;
+    public bool inDisplaySend
+    {
+        get
+        {
+            return m_inDisplay;
+        }
+        set
+        {
+            m_inDisplay = inDisplay;
+        }
+
+    }
+
+
+
     int preEmotionNum = 2;
     int emotionNum = 4;
-    Stack<int> emotionStack = new Stack<int>();            
-
+    Stack<int> emotionStack = new Stack<int>();
     
+    MainAnimator ani = new MainAnimator();
+
 
     void Start()
     {
@@ -54,6 +88,7 @@ public class FaceManager : Agent
         }
         
     }
+   
 
     void Update()
     {
@@ -154,6 +189,7 @@ public class FaceManager : Agent
             }
             if(faces == null)
             {
+                inDisplay = false;
                 emotionNum = 4;
                 RequestDecision();
             }
@@ -196,11 +232,13 @@ public class FaceManager : Agent
             Debug.Log("화면에 없음");
             RequestAction();
         }
-
     }
+
     public override void AgentAction(float[] vectorAction, string textAction)
     {
-        int expressionSelectNum = Mathf.FloorToInt(vectorAction[0]);
+        expressionSelectNum = Mathf.FloorToInt(vectorAction[0]);
+        NotifyObservers();
+        
 
         if (expressionSelectNum == 0)
         {
@@ -385,7 +423,7 @@ public class FaceManager : Agent
         }
 
 
-        Monitor.Log(name, GetCumulativeReward(), transform);
+        //Monitor.Log(name, GetCumulativeReward(), transform);
 
     }
 }
