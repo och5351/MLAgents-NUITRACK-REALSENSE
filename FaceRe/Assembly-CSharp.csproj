@@ -66,10 +66,9 @@
     <Compile Include="Assets\FaceTracker\FinalAssets\Scripts\FaceInfo.cs" />
     <Compile Include="Assets\FaceTracker\FinalAssets\Scripts\FaceManager.cs" />
     <Compile Include="Assets\FaceTracker\FinalAssets\Scripts\FaceSwitcher.cs" />
+    <Compile Include="Assets\FaceTracker\FinalAssets\Scripts\IObserver.cs" />
     <Compile Include="Assets\FaceTracker\FinalAssets\Scripts\MainAnimator.cs" />
     <Compile Include="Assets\FaceTracker\FinalAssets\Scripts\MyAgent.cs" />
-    <Compile Include="Assets\FaceTracker\FinalAssets\Scripts\Observable.cs" />
-    <Compile Include="Assets\FaceTracker\FinalAssets\Scripts\Observer.cs" />
     <Compile Include="Assets\FaceTracker\motionsEvent\motionCheck.cs" />
     <Compile Include="Assets\ML-Agents\Examples\3DBall\Scripts\Ball3DAcademy.cs" />
     <Compile Include="Assets\ML-Agents\Examples\3DBall\Scripts\Ball3DAgent.cs" />

@@ -1349,6 +1349,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
+  obj: {fileID: 1247868826}
 --- !u!1001 &2026825651
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using MLAgents;
+using System.Collections;
 
 public enum Gender
 {
@@ -27,16 +28,15 @@ public enum EmotionType
     angry
 }
 
-public class FaceManager : Agent, Observable
+public class FaceManager : Agent
 {
+    List<Observer> _observerList = new List<Observer>();
     //옵저버 패턴 FaceManger -> Animator
-    public void RegisterObserver(Observer o) { }
-    public void UnregisterObserver(Observer o) { }
-    public void NotifyObservers() { }
 
     [SerializeField] Canvas canvas;
     [SerializeField] GameObject faceController;
     [SerializeField] SkeletonController skeletonController;
+
     List<FaceController> faceControllers = new List<FaceController>();
     Instances[] faces;
     FaceInfo faceInfo;
@@ -44,52 +44,21 @@ public class FaceManager : Agent, Observable
 
     //표정 변화값 변수
     int expressionSelectNum;
-    int m_expressionSelectNum;
-    public int expressionSelectNumSend
-    {
-        get
-        {
-            return m_expressionSelectNum;
-        }
-        set
-        {
-            m_expressionSelectNum = expressionSelectNum;
-        }
-    }
     bool inDisplay;
-    bool m_inDisplay;
-    public bool inDisplaySend
-    {
-        get
-        {
-            return m_inDisplay;
-        }
-        set
-        {
-            m_inDisplay = inDisplay;
-        }
-
-    }
-
-
+    bool selectFlag = false;
 
     int preEmotionNum = 2;
     int emotionNum = 4;
     Stack<int> emotionStack = new Stack<int>();
-    
-    MainAnimator ani = new MainAnimator();
-
 
     void Start()
     {
         for (int i = 0; i < skeletonController.skeletonCount; i++)
         {
             faceControllers.Add(Instantiate(faceController, canvas.transform).GetComponent<FaceController>());
-        }
-        
+        }       
     }
    
-
     void Update()
     {
         string json = nuitrack.Nuitrack.GetInstancesJson();
@@ -157,8 +126,7 @@ public class FaceManager : Agent, Observable
                     RequestDecision();
                 }
 
-
-                int id = 0;
+                int id;
                 Face currentFace = faces[i].face;
                 // Pass the face to FaceController
                 faceControllers[i].SetFace(currentFace);
@@ -203,7 +171,7 @@ public class FaceManager : Agent, Observable
             AddVectorObs(0);
             Debug.Log("화남");
             RequestAction();
-        }
+        } 
         else if (emotionNum == 1)
         {
             AddVectorObs(preEmotionNum);
@@ -237,8 +205,7 @@ public class FaceManager : Agent, Observable
     public override void AgentAction(float[] vectorAction, string textAction)
     {
         expressionSelectNum = Mathf.FloorToInt(vectorAction[0]);
-        NotifyObservers();
-        
+        selectFlag = true;
 
         if (expressionSelectNum == 0)
         {
@@ -420,10 +387,16 @@ public class FaceManager : Agent, Observable
                 AddReward(0.005f);
                 preEmotionNum = 1;
             }
-        }
-
-
-        //Monitor.Log(name, GetCumulativeReward(), transform);
-
+        }        
     }
+    public bool getFlag()
+    {
+        return selectFlag;
+    }
+
+    public int getEx()
+    {
+        return expressionSelectNum;
+    }
+
 }
