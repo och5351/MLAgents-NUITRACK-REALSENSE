@@ -11,8 +11,6 @@ namespace UnityChan
 // Require these components when using this script
 	[RequireComponent(typeof(Animator))]
 
-
-
 	public class IdleChanger : MonoBehaviour
 	{
 	
