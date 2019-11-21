@@ -1,4 +1,4 @@
-# MLAgents-NUITRACK-REALSENSE
+﻿# MLAgents-NUITRACK-REALSENSE
 ## Intro
 ML-Agents and NUITRACK detect target's emotion. And reaction to target.
 
@@ -20,7 +20,9 @@ Success detecting target's emotions with applying NuitrackSDK.
 
 Success Connecting NuitrackSDK with ML-Agents. (Inheriting Agent Class in FaceManager class in NuitrackSDK).
 
-Currently, training AI(Using Imitation Learning), and I plan to connect Unity-chan, a 3d model.
+Success Connecting Unity-chan with Brain.
+
+Currently, training AI(Using Imitation Learning).
 
 ## Scene Location
 Assets\FaceTracker\FinalAssets\FaceTracking.unity
