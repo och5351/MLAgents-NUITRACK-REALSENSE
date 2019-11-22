@@ -43,7 +43,7 @@ public class FaceManager : Agent
 
 
     //표정 변화값 변수
-    int expressionSelectNum;
+    int expressionSelectNum = 8;
     bool inDisplay;
     bool selectFlag = false;
 
@@ -264,7 +264,7 @@ public class FaceManager : Agent
             else
                 AddReward(-0.06f);
         }
-        else
+        else //화면에 없을 때
         {
             if (preEmotionNum == 4 && emotionNum != 4 && expressionSelectNum == 10)
             {
