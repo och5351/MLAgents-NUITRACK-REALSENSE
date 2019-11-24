@@ -20,9 +20,9 @@ Success, detecting target's emotions with applying NuitrackSDK.
 
 Success, Connecting NuitrackSDK with ML-Agents. (Inheriting Agent Class in FaceManager class in NuitrackSDK).
 
-Success, Connecting Unity-chan with Brain.
+Success, Connecting Unity-chan with Brain. --19.11.22
 
-Success, model speak as script. (Only when rest time (I will more insert script))
+Success, model speak as script. (Only when rest time (I will more insert script)) --19.11.24
 
 Currently, I'm making model's motions smooth and training AI(Using Imitation Learning).
 
