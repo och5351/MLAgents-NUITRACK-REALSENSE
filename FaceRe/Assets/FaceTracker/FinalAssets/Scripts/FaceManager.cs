@@ -30,9 +30,6 @@ public enum EmotionType
 
 public class FaceManager : Agent
 {
-    List<Observer> _observerList = new List<Observer>();
-    //옵저버 패턴 FaceManger -> Animator
-
     [SerializeField] Canvas canvas;
     [SerializeField] GameObject faceController;
     [SerializeField] SkeletonController skeletonController;
@@ -46,13 +43,17 @@ public class FaceManager : Agent
     int expressionSelectNum = 8;
     bool inDisplay;
     bool selectFlag = false;
-
+    public GameObject anim;
     int preEmotionNum = 2;
     int emotionNum = 4;
     Stack<int> emotionStack = new Stack<int>();
 
+    
+
+
     void Start()
     {
+        anim.GetComponent<MainAnimator>().expression(11);
         for (int i = 0; i < skeletonController.skeletonCount; i++)
         {
             faceControllers.Add(Instantiate(faceController, canvas.transform).GetComponent<FaceController>());
@@ -88,7 +89,7 @@ public class FaceManager : Agent
                     emotionStack.Push(3);
                 }
 
-                if (emotionStack.Count == 500)
+                if (emotionStack.Count == 200)
                 {
                     int[] emoAvg = { 0, 0, 0, 0 };
                     int temp = 0;
@@ -210,46 +211,58 @@ public class FaceManager : Agent
         if (expressionSelectNum == 0)
         {
             Debug.Log("인공지능의 선택 값 : 울기");
+
+            anim.GetComponent<MainAnimator>().expression(0);
         }
         else if (expressionSelectNum == 1)
         {
             Debug.Log("인공지능의 선택 값 : 주저 앉기");
+            anim.GetComponent<MainAnimator>().expression(1);
         }
         else if (expressionSelectNum == 2)
         {
             Debug.Log("인공지능의 선택 값 : 두손 빌기");
+            anim.GetComponent<MainAnimator>().expression(2);
         }
         else if (expressionSelectNum == 3)
         {
             Debug.Log("인공지능의 선택 값 : 머리 긁적이기");
+            anim.GetComponent<MainAnimator>().expression(3);
         }
         else if (expressionSelectNum == 4)
         {
             Debug.Log("인공지능의 선택 값 : 놀라서 양팔들기");
+            anim.GetComponent<MainAnimator>().expression(4);
         }
         else if (expressionSelectNum == 5)
         {
             Debug.Log("인공지능의 선택 값 : 하트 그리기");
+            anim.GetComponent<MainAnimator>().expression(5);
         }
         else if (expressionSelectNum == 6)
         {
             Debug.Log("인공지능의 선택 값 : 부끄러워 다리 베베꼬기");
+            anim.GetComponent<MainAnimator>().expression(6);
         }
         else if (expressionSelectNum == 7)
         {
             Debug.Log("인공지능의 선택 값 : 박수 치기");
+            anim.GetComponent<MainAnimator>().expression(7);
         }
         else if (expressionSelectNum == 8)
         {
             Debug.Log("인공지능의 선택 값 : 쉬기");
+            anim.GetComponent<MainAnimator>().expression(8);
         }
         else if (expressionSelectNum == 9)
         {
             Debug.Log("인공지능의 선택 값 : 춤추기");
+            anim.GetComponent<MainAnimator>().expression(9);
         }
         else if (expressionSelectNum == 10)
         {
             Debug.Log("인공지능의 선택 값 : 손인사");
+            anim.GetComponent<MainAnimator>().expression(10);
         }
 
         //화면에 비쳤을 때 쉬고 있으면

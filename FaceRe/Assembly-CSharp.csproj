@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\FaceTracker\BlendshapeWeights.cs" />
+    <Compile Include="Assets\FaceTracker\FinalAssets\Scripts\BubbleTextCtrl.cs" />
     <Compile Include="Assets\FaceTracker\FinalAssets\Scripts\ExpressionAcademy.cs" />
     <Compile Include="Assets\FaceTracker\FinalAssets\Scripts\FaceController.cs" />
     <Compile Include="Assets\FaceTracker\FinalAssets\Scripts\FaceInfo.cs" />
@@ -69,6 +70,7 @@
     <Compile Include="Assets\FaceTracker\FinalAssets\Scripts\IObserver.cs" />
     <Compile Include="Assets\FaceTracker\FinalAssets\Scripts\MainAnimator.cs" />
     <Compile Include="Assets\FaceTracker\FinalAssets\Scripts\MyAgent.cs" />
+    <Compile Include="Assets\FaceTracker\FinalAssets\Scripts\SpeechBubbleCtrl.cs" />
     <Compile Include="Assets\FaceTracker\motionsEvent\motionCheck.cs" />
     <Compile Include="Assets\ML-Agents\Examples\3DBall\Scripts\Ball3DAcademy.cs" />
     <Compile Include="Assets\ML-Agents\Examples\3DBall\Scripts\Ball3DAgent.cs" />

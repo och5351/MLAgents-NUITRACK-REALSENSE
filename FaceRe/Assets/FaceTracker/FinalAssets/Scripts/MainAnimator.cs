@@ -8,13 +8,13 @@ public class MainAnimator : MonoBehaviour
 {
    
     public Animator anim;
-    public GameObject obj;
+        
+    public GameObject speech;
 
     //필요 변수    
     int waitCount = 0; // 휴식시간 타이머
     bool selectFlag = false;
-    int act = 8;
-    
+    int restAct = 0;
     
     // Start is called before the first frame update
     void Start()
@@ -22,30 +22,6 @@ public class MainAnimator : MonoBehaviour
         anim = GetComponentInChildren<Animator>();        
     }
     
-
-
-    public void CheckAnimationState()
-    {
-        /*
-        if (!anim.GetCurrentAnimatorStateInfo(0)
-        .IsName(actName))
-        {
-            //전환 중일 때 실행되는 부분
-           
-            yield return null;
-        }
-        */
-        if(anim.GetCurrentAnimatorStateInfo(0)
-        .normalizedTime >= 1)
-        {
-            
-        }
-        else
-        {
-            Debug.Log("행동 중이므로 행동지령을 받지 않습니다.");
-        }
-       
-    }
     /*
         0. 울기
         1. 주저 앉기
@@ -60,48 +36,71 @@ public class MainAnimator : MonoBehaviour
         10. 손인사
     */
 
-    public void expression()
-    {
-        act = obj.GetComponent<FaceManager>().getEx();
-        
-       
-        anim.SetInteger("act", act);
+    public void expression(int act)
+    {        
+       if(act == 8)
+        {
+            breakTime(act);
+        }else
+            anim.SetInteger("act", act);
         
         
         Debug.Log("행동 : " + act);
        
     }
 
-    void breakTime()
+    void breakTime(int act)
     {    
-        int i = Random.Range(0,3);
-        if (anim.GetCurrentAnimatorStateInfo(0)
-        .normalizedTime >= 1 && act == 8)
-        {
-            if (i == 0 && act == 8)
-            {
-                anim.SetInteger("act", act);
-            }
-            else if(i==1 && act == 8)
-            {
-                anim.SetInteger("act", act);
-            }
-            else if(i==2 && act == 8)
-            {
-                anim.SetInteger("act", act);
-            }            
-        }
 
+        /*
+         * 휴식 모션 연계 너무 빠름
+         * count 변수 선언으로 수정 요망(waitsitdown이 더 길게)
+         */
+        
+        int i = Random.Range(0,3);
+       
+       
+        if (i == 0 && act == 8)
+        {
+            anim.SetInteger("act", act);
+            anim.SetInteger("restAct", i);
+            speech.SetActive(true);
+            speechFunc("에고고.. 쉬어볼까? ");
+            
+        }
+        else if(i==1 && act == 8)
+        {
+            anim.SetInteger("act", act);
+            anim.SetInteger("restAct", i);
+            speech.SetActive(true);
+            speechFunc("나 혼자 흔들흔들~");
+           
+        }
+        else if(i==2 && act == 8)
+        {
+            anim.SetInteger("act", act);
+            anim.SetInteger("restAct", i);
+            speech.SetActive(true);
+            speechFunc("아이코~~ 삭신이야~~");
+            
+        }            
+        
+
+    }
+
+
+
+
+    public void speechFunc(string text)
+    {
+       
+        speech.GetComponent<SpeechBubbleCtrl>().setText(text);
     }
 
     // Update is called once per frame
     void Update()
     {
-        waitCount++;
-        if (waitCount == 150)
-        {
-            expression();
-            waitCount = 0;
-        }        
+      
+           
     }
 }

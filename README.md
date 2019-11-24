@@ -14,15 +14,17 @@ INTEL REALSENS(d435i).
 ML-Agents(Unity3D).
 
 ## Progress
-Success Connecting RealSense with Unity3D.
+Success, Connecting RealSense with Unity3D.
 
-Success detecting target's emotions with applying NuitrackSDK.
+Success, detecting target's emotions with applying NuitrackSDK.
 
-Success Connecting NuitrackSDK with ML-Agents. (Inheriting Agent Class in FaceManager class in NuitrackSDK).
+Success, Connecting NuitrackSDK with ML-Agents. (Inheriting Agent Class in FaceManager class in NuitrackSDK).
 
-Success Connecting Unity-chan with Brain.
+Success, Connecting Unity-chan with Brain.
 
-Currently, training AI(Using Imitation Learning).
+Success, model speak as script. (Only when rest time (I will more insert script))
+
+Currently, I'm making model's motions smooth and training AI(Using Imitation Learning).
 
 ## Scene Location
 Assets\FaceTracker\FinalAssets\FaceTracking.unity
