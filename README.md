@@ -24,7 +24,9 @@ Success, Connecting Unity-chan with Brain. --19.11.22
 
 Success, model speak as script. (Only when rest time (I will more insert script)) --19.11.24
 
-Currently, I'm making model's motions smooth and training AI(Using Imitation Learning).
+Success, making model's motions smooth. -- 19.11.25
+
+Currently, training AI(Using Imitation Learning(Add a observation to existing ones. so increase number of cases of emotional change)).
 
 ## Scene Location
 Assets\FaceTracker\FinalAssets\FaceTracking.unity

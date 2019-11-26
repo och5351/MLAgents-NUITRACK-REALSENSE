@@ -130,7 +130,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &31108348
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -228,7 +228,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!81 &46407015
 AudioListener:
   m_ObjectHideFlags: 0
@@ -254,7 +254,7 @@ Camera:
   m_GameObject: {fileID: 46407014}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 2
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
@@ -294,13 +294,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 46407014}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0.2588191, y: 0, z: 0, w: 0.9659258}
+  m_LocalPosition: {x: 11.5, y: 10, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 30, y: 0, z: 0}
 --- !u!1 &69316194
 GameObject:
   m_ObjectHideFlags: 0
@@ -454,7 +454,7 @@ MonoBehaviour:
     agentRenderTextures: []
     maxStep: 0
     resetOnDone: 1
-    onDemandDecision: 0
+    onDemandDecision: 1
     numberOfActionsBetweenDecisions: 60
 --- !u!135 &168842634
 SphereCollider:
@@ -541,7 +541,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   record: 1
-  demonstrationName: EmotionPlay5
+  demonstrationName: 1126demo2
 --- !u!1 &201919431
 GameObject:
   m_ObjectHideFlags: 0
@@ -742,7 +742,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 108, y: 112}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &508802825
 MonoBehaviour:
@@ -997,8 +997,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   broadcastHub:
     broadcastingBrains:
-    - {fileID: 11400000, guid: 0ff60945188c63d4fa466221c0fd8a04, type: 2}
-    - {fileID: 0}
+    - {fileID: 11400000, guid: fb1cd79f1e706df4abe75d58790b42fd, type: 2}
     _brainsToControl: []
   maxSteps: 0
   trainingConfiguration:
@@ -1045,7 +1044,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1247868827
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1212,7 +1211,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1514079306
 Transform:
   m_ObjectHideFlags: 0
@@ -1238,7 +1237,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 101342, guid: e999ace05c586574fa1b964016f28531, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 449316, guid: e999ace05c586574fa1b964016f28531, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1405,7 +1404,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1685921570
 Transform:
   m_ObjectHideFlags: 0
@@ -1433,7 +1432,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1931726790919894, guid: 1dd751cf83e65b547afe6cfea8d50f49, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224643596690766804, guid: 1dd751cf83e65b547afe6cfea8d50f49,
         type: 3}
@@ -1962,7 +1961,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1369143103557266, guid: 0487f0462a963734786f20a486a0bb27, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224564593098585988, guid: 0487f0462a963734786f20a486a0bb27,
         type: 3}
@@ -2113,7 +2112,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2093955710
 MonoBehaviour:
   m_ObjectHideFlags: 0

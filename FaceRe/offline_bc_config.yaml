@@ -15,10 +15,9 @@ default:
 ExpressionBrain:
     trainer: offline_bc
     batches_per_epoch: 10
-    buffer_size: 12000
-    batch_size: 1200
+    batch_size: 64
     max_steps: 5.0e5
-    demo_path: Assets/Demonstrations/EmotionPlay4.demo
+    demo_path: Assets/Demonstrations/1126demo1.demo
 
 HallwayLearning:
     trainer: offline_bc

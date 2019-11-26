@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: ExpressionBrain
   m_EditorClassIdentifier: 
   brainParameters:
-    vectorObservationSize: 2
+    vectorObservationSize: 3
     numStackedVectorObservations: 1
-    vectorActionSize: 0b000000
+    vectorActionSize: 0d000000
     cameraResolutions: []
     vectorActionDescriptions:
     - 
     vectorActionSpaceType: 0
-  model: {fileID: 11400000, guid: 2dd1ba828b74f43449d6343142e834eb, type: 3}
+  model: {fileID: 0}
   inferenceDevice: 0

@@ -21,19 +21,21 @@ public class MainAnimator : MonoBehaviour
     {
         anim = GetComponentInChildren<Animator>();        
     }
-    
+
     /*
-        0. 울기
-        1. 주저 앉기
-        2. 두 손 빌기
-        3. 머리 긁적이기
-        4. 놀라서 양팔들기
-        5. 하트 그리기
-        6. 부끄러워 다리 베베꼬기
-        7. 박수치기
-        8. 쉬기
-        9. 춤추기
-        10. 손인사
+     * 0 : 좌절
+     * 1 : 의기소침 앉기
+     * 2 : 작은 하트
+     * 3 : 머리 긁적이기
+     * 4 : 뒤로 넘어지기
+     * 5 : 필승
+     * 6 : 부끄러워 하기
+     * 7 : 한바퀴돌아차기
+     * 8 : 만세
+     * 9 : 손인사
+     * 10 : 앉아서 쉬기
+     * 11 : 스트레칭
+     * 12 : 흔들흔들 
     */
 
     public void expression(int act)
@@ -87,9 +89,6 @@ public class MainAnimator : MonoBehaviour
         
 
     }
-
-
-
 
     public void speechFunc(string text)
     {

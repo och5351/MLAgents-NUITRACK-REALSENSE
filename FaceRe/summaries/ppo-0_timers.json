@@ -1,60 +1,60 @@
 {
   "name": "root",
-  "total": 117.78430900000001,
+  "total": 36.546034999999996,
   "count": 1,
-  "self": 4.192323200000018,
+  "self": 9.7294755,
   "children": [
     {
       "name": "TrainerController.advance",
-      "total": 113.59198579999999,
-      "count": 1818,
-      "self": 0.6245517999997645,
+      "total": 26.816559499999997,
+      "count": 6,
+      "self": 0.006908599999995602,
       "children": [
         {
           "name": "env_step",
-          "total": 112.96743400000022,
-          "count": 1818,
-          "self": 112.94420930000044,
+          "total": 26.8096509,
+          "count": 6,
+          "self": 26.809576399999997,
           "children": [
             {
               "name": "SubprocessEnvManager._take_step",
-              "total": 0.009158399999706024,
-              "count": 1818,
-              "self": 0.009158399999706024
+              "total": 3.600000000325565e-05,
+              "count": 6,
+              "self": 3.600000000325565e-05
             },
             {
               "name": "workers",
-              "total": 0.014066300000082244,
-              "count": 1817,
+              "total": 3.8499999998720114e-05,
+              "count": 5,
               "self": 0.0,
               "children": [
                 {
                   "name": "worker_root",
-                  "total": 115.04979159999982,
-                  "count": 1817,
+                  "total": 30.8766106,
+                  "count": 5,
                   "is_parallel": true,
-                  "self": 2.8330326999999897,
+                  "self": 7.018735900000003,
                   "children": [
                     {
                       "name": "UnityEnvironment.step",
-                      "total": 112.21675889999983,
-                      "count": 1817,
+                      "total": 23.857874699999996,
+                      "count": 5,
                       "is_parallel": true,
-                      "self": 0.33633619999983466,
+                      "self": 0.0009902999999908957,
                       "children": [
                         {
                           "name": "UnityEnvironment._generate_step_input",
-                          "total": 0.01914659999999313,
-                          "count": 1817,
+                          "total": 7.880000000337617e-05,
+                          "count": 5,
                           "is_parallel": true,
-                          "self": 0.01914659999999313
+                          "self": 7.880000000337617e-05
                         },
                         {
                           "name": "communicator.exchange",
-                          "total": 111.8612761,
-                          "count": 1817,
+                          "total": 23.8568056,
+                          "count": 5,
                           "is_parallel": true,
-                          "self": 111.8612761
+                          "self": 23.8568056
                         }
                       ]
                     }

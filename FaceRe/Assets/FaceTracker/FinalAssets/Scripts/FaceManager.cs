@@ -38,17 +38,21 @@ public class FaceManager : Agent
     Instances[] faces;
     FaceInfo faceInfo;
 
-
-    //표정 변화값 변수
-    int expressionSelectNum = 8;
-    bool inDisplay;
-    bool selectFlag = false;
+    //표정 변화값 변수    
     public GameObject anim;
-    int preEmotionNum = 2;
+    int oldPreEmotionNum = 4;
+    int preEmotionNum = 4;
     int emotionNum = 4;
+    int expressionSelectNum = 8;
     Stack<int> emotionStack = new Stack<int>();
+    Stack<int> restStack = new Stack<int>();
 
-    
+    //표정 문자화
+    int angry = 0;
+    int surprise = 1;
+    int netural = 2;
+    int happy = 3;
+    int empty = 4;
 
 
     void Start()
@@ -70,7 +74,14 @@ public class FaceManager : Agent
         {
             if (faces != null && i < faces.Length)
             {              
-                inDisplay = true;
+   
+                int id;
+                Face currentFace = faces[i].face;
+                // Pass the face to FaceController
+                faceControllers[i].SetFace(currentFace);
+                faceControllers[i].gameObject.SetActive(true);
+              
+                restStack.Clear();
                 //표정스택에 등록 1.화남//2.놀람//3.자연스러움//4.웃음
                 if (faceControllers[i].emotions == EmotionType.angry)
                 {
@@ -89,7 +100,7 @@ public class FaceManager : Agent
                     emotionStack.Push(3);
                 }
 
-                if (emotionStack.Count == 200)
+                if (emotionStack.Count == 250)
                 {
                     int[] emoAvg = { 0, 0, 0, 0 };
                     int temp = 0;
@@ -127,11 +138,7 @@ public class FaceManager : Agent
                     RequestDecision();
                 }
 
-                int id;
-                Face currentFace = faces[i].face;
-                // Pass the face to FaceController
-                faceControllers[i].SetFace(currentFace);
-                faceControllers[i].gameObject.SetActive(true);
+
 
                 // IDs of faces and skeletons are the same
                 id = faces[i].id;
@@ -152,13 +159,26 @@ public class FaceManager : Agent
                 
             }
             else
-            {                
-                inDisplay = false;
+            {
+                restStack.Push(4);               
+                //emotionNum = 4;
+                
+                if(restStack.Count == 250 && preEmotionNum != 4)
+                {
+                    emotionNum = 4;
+                    restStack.Clear();
+                    RequestDecision();
+                   
+                }else if(preEmotionNum == 4 && restStack.Count > 600){
+                    emotionNum = 4;
+                    restStack.Clear();
+                    RequestDecision();
+                }
+                //RequestDecision();
                 faceControllers[i].gameObject.SetActive(false);                
             }
             if(faces == null)
-            {
-                inDisplay = false;
+            {               
                 emotionNum = 4;
                 RequestDecision();
             }
@@ -205,8 +225,10 @@ public class FaceManager : Agent
 
     public override void AgentAction(float[] vectorAction, string textAction)
     {
-        expressionSelectNum = Mathf.FloorToInt(vectorAction[0]);
-        selectFlag = true;
+        expressionSelectNum = Mathf.FloorToInt(vectorAction[0]);        
+
+        Debug.Log("emotionNum : " + emotionNum);
+        Debug.Log("preEmtionNum : " + preEmotionNum);
 
         if (expressionSelectNum == 0)
         {
@@ -268,7 +290,7 @@ public class FaceManager : Agent
         //화면에 비쳤을 때 쉬고 있으면
         if (emotionNum == 4)
         {
-            AddReward(-0.031f);
+            AddReward(-0.031f);           
 
             if (expressionSelectNum == 8)
             {
@@ -276,10 +298,12 @@ public class FaceManager : Agent
             }
             else
                 AddReward(-0.06f);
+
+            preEmotionNum = 4;
         }
-        else //화면에 없을 때
+        else //화면에 있을 때
         {
-            if (preEmotionNum == 4 && emotionNum != 4 && expressionSelectNum == 10)
+            if (preEmotionNum == 4 && emotionNum != 4 && expressionSelectNum == 10) //처음 봤을 때 인사 하면
             {
                 AddReward(0.02f);
             }
@@ -289,7 +313,7 @@ public class FaceManager : Agent
             }
 
 
-            //웃음에서 웃음으로 갈 때    0.04f
+            //웃음 -> 웃음 -> 웃음
             if (preEmotionNum == 3 && emotionNum == 3)
             {
                 AddReward(0.06f);
@@ -402,14 +426,5 @@ public class FaceManager : Agent
             }
         }        
     }
-    public bool getFlag()
-    {
-        return selectFlag;
-    }
-
-    public int getEx()
-    {
-        return expressionSelectNum;
-    }
-
+   
 }

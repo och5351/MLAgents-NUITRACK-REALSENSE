@@ -90,7 +90,7 @@ public class SpeechBubbleCtrl : MonoBehaviour
     {
         if(start == true){
             counter++;
-            if(counter == 50)
+            if(counter == 100)
             {
                 this.gameObject.SetActive(false);
                 counter = 0;

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Teacher
   m_EditorClassIdentifier: 
   brainParameters:
-    vectorObservationSize: 2
+    vectorObservationSize: 3
     numStackedVectorObservations: 1
-    vectorActionSize: 0b000000
+    vectorActionSize: 0d000000
     cameraResolutions: []
     vectorActionDescriptions:
     - 
@@ -53,6 +53,12 @@ MonoBehaviour:
   - key: 57
     branchIndex: 0
     value: 9
-  - key: 113
+  - key: 117
     branchIndex: 0
     value: 10
+  - key: 105
+    branchIndex: 0
+    value: 11
+  - key: 111
+    branchIndex: 0
+    value: 12

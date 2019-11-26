@@ -71,7 +71,6 @@
     <Compile Include="Assets\FaceTracker\FinalAssets\Scripts\MainAnimator.cs" />
     <Compile Include="Assets\FaceTracker\FinalAssets\Scripts\MyAgent.cs" />
     <Compile Include="Assets\FaceTracker\FinalAssets\Scripts\SpeechBubbleCtrl.cs" />
-    <Compile Include="Assets\FaceTracker\motionsEvent\motionCheck.cs" />
     <Compile Include="Assets\ML-Agents\Examples\3DBall\Scripts\Ball3DAcademy.cs" />
     <Compile Include="Assets\ML-Agents\Examples\3DBall\Scripts\Ball3DAgent.cs" />
     <Compile Include="Assets\ML-Agents\Examples\3DBall\Scripts\Ball3DDecision.cs" />
