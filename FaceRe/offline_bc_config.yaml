@@ -17,7 +17,7 @@ ExpressionBrain:
     batches_per_epoch: 10
     batch_size: 64
     max_steps: 5.0e5
-    demo_path: Assets/Demonstrations/1126demo1.demo
+    demo_path: Assets/Demonstrations/1127demo0.demo
 
 HallwayLearning:
     trainer: offline_bc

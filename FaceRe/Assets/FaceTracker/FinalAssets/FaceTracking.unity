@@ -295,7 +295,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 46407014}
   m_LocalRotation: {x: 0.2588191, y: 0, z: 0, w: 0.9659258}
-  m_LocalPosition: {x: 11.5, y: 10, z: 5}
+  m_LocalPosition: {x: 0, y: 10, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -541,7 +541,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   record: 1
-  demonstrationName: 1126demo2
+  demonstrationName: 1127demo0
 --- !u!1 &201919431
 GameObject:
   m_ObjectHideFlags: 0
@@ -845,7 +845,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &744251991
 Transform:
   m_ObjectHideFlags: 0
@@ -997,8 +997,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   broadcastHub:
     broadcastingBrains:
-    - {fileID: 11400000, guid: fb1cd79f1e706df4abe75d58790b42fd, type: 2}
-    _brainsToControl: []
+    - {fileID: 11400000, guid: 0ff60945188c63d4fa466221c0fd8a04, type: 2}
+    _brainsToControl:
+    - {fileID: 11400000, guid: 0ff60945188c63d4fa466221c0fd8a04, type: 2}
   maxSteps: 0
   trainingConfiguration:
     width: 80
@@ -1211,7 +1212,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1514079306
 Transform:
   m_ObjectHideFlags: 0
