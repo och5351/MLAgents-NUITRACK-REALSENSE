@@ -64,6 +64,8 @@ public class SpeechBubbleCtrl : MonoBehaviour
 
     IEnumerator printText(string text, float delay)
     {
+        //this.gameObject.SetActive(true);
+
         char[] words = text.ToCharArray();
         float speed = delay.Equals(0) ? _printSpeed : delay;
 

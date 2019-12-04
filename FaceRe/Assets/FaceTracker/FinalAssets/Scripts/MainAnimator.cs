@@ -14,12 +14,16 @@ public class MainAnimator : MonoBehaviour
     //필요 변수    
     int waitCount = 0; // 휴식시간 타이머
     bool selectFlag = false;
-    int restAct = 0;
+    int ashamedAct = 0;
+    int helloCount = 5; 
+
     
     // Start is called before the first frame update
     void Start()
     {
-        anim = GetComponentInChildren<Animator>();        
+        anim = GetComponentInChildren<Animator>();
+        speech.SetActive(false);
+
     }
 
     /*
@@ -39,17 +43,63 @@ public class MainAnimator : MonoBehaviour
     */
 
     public void expression(int act)
-    {        
-       if(act == 8)
+    {
+        if (act == 6)
         {
+            
+            //ashame();
+        }
+        else if(act == 9)
+        {
+            runHello(act);
+        }
+        else if (act == 11)
+        {
+           
+            ashamedAct = 0;
             breakTime(act);
-        }else
+        }
+        else
+        {
+            helloCount = 5;
+            ashamedAct = 0;
             anim.SetInteger("act", act);
-        
+        }
         
         Debug.Log("행동 : " + act);
        
     }
+
+
+    void runHello(int act)
+    {
+        if(helloCount == 5)
+        {
+            anim.SetInteger("act", act);
+            anim.SetInteger("restAct", helloCount);
+            helloCount = 6;
+        }
+
+    }
+
+
+    void ashame()
+    {
+        
+        if(ashamedAct == 0)
+        {
+            anim.SetInteger("restAct", ashamedAct);
+            ashamedAct++;
+        }else if (ashamedAct == 1)
+        {
+            anim.SetInteger("restAct", ashamedAct);
+            ashamedAct++;
+        }else
+            anim.SetInteger("restAct", ashamedAct);
+            ashamedAct=0;
+
+    }
+
 
     void breakTime(int act)
     {    
@@ -59,17 +109,18 @@ public class MainAnimator : MonoBehaviour
          * count 변수 선언으로 수정 요망(waitsitdown이 더 길게)
          */
         
-        int i = Random.Range(0,3);
+        //int i = Random.Range(0,3);
        
        
-        if (i == 0 && act == 8)
-        {
+       // if (i == 0 && act == 8)
+        //{
             anim.SetInteger("act", act);
-            anim.SetInteger("restAct", i);
-            speech.SetActive(true);
-            speechFunc("에고고.. 쉬어볼까? ");
+           
+            //speech.SetActive(true);
+            //speechFunc("에고고.. 쉬어볼까? ");
             
-        }
+       // }
+       /*
         else if(i==1 && act == 8)
         {
             anim.SetInteger("act", act);
@@ -85,7 +136,8 @@ public class MainAnimator : MonoBehaviour
             speech.SetActive(true);
             speechFunc("아이코~~ 삭신이야~~");
             
-        }            
+        }
+        */      
         
 
     }
