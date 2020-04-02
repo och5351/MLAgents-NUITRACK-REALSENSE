@@ -38,7 +38,10 @@
     Assets\FaceTracker\FinalAssets\FaceTracking.unity
 
  > ## Description
-
+    
+    # 
+    ![debuging](https://user-images.githubusercontent.com/45858414/78201066-a134da00-74cb-11ea-8d82-1a9d26a8d9a8.png)
+    
     This project have a 2 brain. One is Player brain in Unity's ML-Agents. Another is Learning brain.
 
     This brain waiting at inputting 2 observing values. (one is emotion. Another is my intentions(It just sending with key code(free Nuitrack has a limit 3 minutes. So I can't progress Learning with NuitrackSDK.). but it will be changing)) 
