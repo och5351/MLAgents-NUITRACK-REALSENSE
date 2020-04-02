@@ -1,8 +1,3 @@
-.center {
- display: block;
- margin: auto;
-}
-
 MLAgents-NUITRACK-REALSENSE
 ===
 
@@ -43,6 +38,8 @@ MLAgents-NUITRACK-REALSENSE
     Assets\FaceTracker\FinalAssets\FaceTracking.unity
 
  > ## Description
+   
+    # Dubuging
    
 ![debuging](https://user-images.githubusercontent.com/45858414/78201066-a134da00-74cb-11ea-8d82-1a9d26a8d9a8.png){: .center}
     
