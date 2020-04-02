@@ -37,11 +37,13 @@ MLAgents-NUITRACK-REALSENSE
 
     Assets\FaceTracker\FinalAssets\FaceTracking.unity
 
- > ## Description
+Description
+---   
+ > ## Dubuging view
    
-    # Dubuging
-   
-![debuging](https://user-images.githubusercontent.com/45858414/78201066-a134da00-74cb-11ea-8d82-1a9d26a8d9a8.png){: .center}
+![debuging](https://user-images.githubusercontent.com/45858414/78201066-a134da00-74cb-11ea-8d82-1a9d26a8d9a8.png)
+
+ > ## Detail
     
     This project have a 2 brain. One is Player brain in Unity's ML-Agents. Another is Learning brain.
 
