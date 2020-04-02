@@ -1,4 +1,9 @@
-﻿MLAgents-NUITRACK-REALSENSE
+.center {
+ display: block;
+ margin: auto;
+}
+
+MLAgents-NUITRACK-REALSENSE
 ===
 
  > ## Intro
