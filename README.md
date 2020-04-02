@@ -55,11 +55,45 @@ Description
     
  > ## Action
  
- # Frustration
- 
+    # Frustration
 ![0  좌절](https://user-images.githubusercontent.com/45858414/78201915-d6dac280-74cd-11ea-9328-4f3b90a3805e.PNG)
 
+    # Depression
+![1  의기소침 앉기](https://user-images.githubusercontent.com/45858414/78201999-14d7e680-74ce-11ea-9f6b-08fa973a71b2.PNG)
 
+    # Beg
+![2  빌기](https://user-images.githubusercontent.com/45858414/78202000-14d7e680-74ce-11ea-97cf-235e1fa371df.PNG)
+
+    # Scratching head
+![3  머리 긁적이기](https://user-images.githubusercontent.com/45858414/78202001-15707d00-74ce-11ea-9686-b119859e7c78.PNG)
+
+    # Fall back
+![4  뒤로 넘어지기](https://user-images.githubusercontent.com/45858414/78202003-15707d00-74ce-11ea-8dad-454e911e1897.PNG)
+
+    # salute
+![5  경례](https://user-images.githubusercontent.com/45858414/78202004-16091380-74ce-11ea-80c3-29ddceb7a28f.PNG)
+
+    # Ashamed
+![6  부끄러워 하기](https://user-images.githubusercontent.com/45858414/78202006-16091380-74ce-11ea-9291-74168b300b75.PNG)
+
+    # One turn kick
+![7  한바퀴 돌아차기](https://user-images.githubusercontent.com/45858414/78202007-16a1aa00-74ce-11ea-928d-f7d9517ae5d5.PNG)
+    
+    # hurray
+![8  만세](https://user-images.githubusercontent.com/45858414/78202008-16a1aa00-74ce-11ea-9f1c-2529f80a37db.PNG)
+    
+    # Hand greeting
+![9  손인사](https://user-images.githubusercontent.com/45858414/78202010-173a4080-74ce-11ea-9628-a6e233d25623.PNG)
+    
+    # Sit and rest
+![10  앉아서 쉬기](https://user-images.githubusercontent.com/45858414/78202011-173a4080-74ce-11ea-9178-300aaf340b69.PNG)
+    
+    # stretching
+![11  스트레칭](https://user-images.githubusercontent.com/45858414/78202012-17d2d700-74ce-11ea-808d-cadbc1720fa4.PNG)
+
+    # Little shake body
+![12  흔들흔들](https://user-images.githubusercontent.com/45858414/78201994-13a6b980-74ce-11ea-85e9-f0ed226945df.PNG)
+    
  > ## License
 
     NuitrackSDK : Copyright © 2018 Tsukasa SUGIURA Distributed under the MIT License.
