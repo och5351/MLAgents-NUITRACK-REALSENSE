@@ -1,35 +1,44 @@
-﻿# MLAgents-NUITRACK-REALSENSE
-## Intro
-ML-Agents and NUITRACK detect target's emotion. And reaction to target.
+﻿
 
-Some sick people want shared there's feeling with anythings. Sometimes. But it's not easy. So I want they are sharing feels with A.I.
 
-This project is first step my hope.
+MLAgents-NUITRACK-REALSENSE
+===
 
-## Using
-NUITRACK SDK(Face-tracking).
+ > ## Intro
 
-INTEL REALSENS(d435i).
+   ML-Agents and NUITRACK detect target's emotion. And reaction to target.
 
-ML-Agents(Unity3D).
+   Some sick people want shared there's feeling with anythings. Sometimes. But it's not easy. So I want they are sharing feels with A.I.
 
-## Progress
-Success, Connecting RealSense with Unity3D.
+   This project is first step my hope.
 
-Success, detecting target's emotions with applying NuitrackSDK.
+ > ## Using
 
-Success, Connecting NuitrackSDK with ML-Agents. (Inheriting Agent Class in FaceManager class in NuitrackSDK).
+   NUITRACK SDK(Face-tracking).
 
-Success, Connecting Unity-chan with Brain. --19.11.22
+   INTEL REALSENS(d435i).
 
-Success, model speak as script. (Only when rest time (I will more insert script)) --19.11.24
+   ML-Agents(Unity3D).
 
-Success, making model's motions smooth. -- 19.11.25
+ > ## Progress
 
-Currently, training AI(Using Imitation Learning(Add a observation to existing ones. so increase number of cases of emotional change)).
+   Success, Connecting RealSense with Unity3D.
 
-## Scene Location
-Assets\FaceTracker\FinalAssets\FaceTracking.unity
+   Success, detecting target's emotions with applying NuitrackSDK.
+
+   Success, Connecting NuitrackSDK with ML-Agents. (Inheriting Agent Class in FaceManager class in NuitrackSDK).
+
+   Success, Connecting Unity-chan with Brain. --19.11.22
+
+   Success, model speak as script. (Only when rest time (I will more insert script)) --19.11.24
+
+   Success, making model's motions smooth. -- 19.11.25
+
+   Currently, training AI(Using Imitation Learning(Add a observation to existing ones. so increase number of cases of emotional change)).
+
+ > ## Scene Location
+
+   Assets\FaceTracker\FinalAssets\FaceTracking.unity
 
 ## Description
 This project have a 2 brain. One is Player brain in Unity's ML-Agents. Another is Learning brain.

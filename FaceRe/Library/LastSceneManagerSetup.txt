@@ -1,4 +1,0 @@
-sceneSetups:
-- path: Assets/FaceTracker/FinalAssets/FaceTracking.unity
-  isLoaded: 1
-  isActive: 1
