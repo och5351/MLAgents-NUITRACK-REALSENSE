@@ -7,6 +7,11 @@ MLAgents-NUITRACK-REALSENSE
     Some sick people want shared there's feeling with anythings. Sometimes. But it's not easy. So I want they are sharing feels with A.I.
     This project is first step my hope.
 
+ > ## Dubuging view
+<p align="center">
+<img src="https://user-images.githubusercontent.com/45858414/78201066-a134da00-74cb-11ea-8d82-1a9d26a8d9a8.png">
+</p>
+
  > ## Using
 
     NUITRACK SDK(Face-tracking).
@@ -39,9 +44,6 @@ MLAgents-NUITRACK-REALSENSE
 
 Description
 ---   
- > ## Dubuging view
-   
-![debuging](https://user-images.githubusercontent.com/45858414/78201066-a134da00-74cb-11ea-8d82-1a9d26a8d9a8.png)
 
  > ## Detail
     
