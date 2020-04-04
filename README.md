@@ -57,7 +57,7 @@ Description
     
  > ## Action
        
-       1. Frustration                2. Depression               3. Beg               4. Scratching head
+             1. Frustration             2. Depression               3. Beg               4. Scratching head
 <p align="center">
 <img src="https://user-images.githubusercontent.com/45858414/78201915-d6dac280-74cd-11ea-9328-4f3b90a3805e.PNG" width="20%" height="300">
 <img src="https://user-images.githubusercontent.com/45858414/78201999-14d7e680-74ce-11ea-9f6b-08fa973a71b2.PNG" width="20%" height="300">
