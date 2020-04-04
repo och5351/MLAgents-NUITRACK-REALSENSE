@@ -56,17 +56,20 @@ Description
     In this case, Imitation Learning, player brain is teacher brain and the new brain, Learning brain(In Unity's ML-Agents brain), be student brain. So student brain decide following teacher brain decision.
     
  > ## Action
- 
-    # Frustration
-![0  좌절](https://user-images.githubusercontent.com/45858414/78201915-d6dac280-74cd-11ea-9328-4f3b90a3805e.PNG)
+       
+    1. Frustration                2. Depression               3. Beg               4. Scratching head
+    
+    
+    
+ <img src="https://user-images.githubusercontent.com/45858414/78201915-d6dac280-74cd-11ea-9328-4f3b90a3805e.PNG" width="20%">
 
-    # Depression
+    # 
 ![1  의기소침 앉기](https://user-images.githubusercontent.com/45858414/78201999-14d7e680-74ce-11ea-9f6b-08fa973a71b2.PNG)
 
-    # Beg
+    # 
 ![2  빌기](https://user-images.githubusercontent.com/45858414/78202000-14d7e680-74ce-11ea-97cf-235e1fa371df.PNG)
 
-    # Scratching head
+    # 
 ![3  머리 긁적이기](https://user-images.githubusercontent.com/45858414/78202001-15707d00-74ce-11ea-9686-b119859e7c78.PNG)
 
     # Fall back
