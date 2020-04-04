@@ -57,7 +57,7 @@ Description
     
  > ## Action
        
-                1. Frustration             2. Depression               3. Beg               4. Scratching head
+                1. Frustration             2. Depression               3. Beg             4. Scratching head
 <p align="center">
 <img src="https://user-images.githubusercontent.com/45858414/78201915-d6dac280-74cd-11ea-9328-4f3b90a3805e.PNG" width="20%" height="300">
 <img src="https://user-images.githubusercontent.com/45858414/78201999-14d7e680-74ce-11ea-9f6b-08fa973a71b2.PNG" width="20%" height="300">
@@ -65,33 +65,23 @@ Description
 <img src="https://user-images.githubusercontent.com/45858414/78202001-15707d00-74ce-11ea-9686-b119859e7c78.PNG" width="20%" height="300">
  </p>
 
-    # Fall back
-![4  뒤로 넘어지기](https://user-images.githubusercontent.com/45858414/78202003-15707d00-74ce-11ea-8dad-454e911e1897.PNG)
+                5. Fall back               6. salute                   7. Ashamed          8. One turn kick
+<p align="center">
+<img src="https://user-images.githubusercontent.com/45858414/78202003-15707d00-74ce-11ea-8dad-454e911e1897.PNG width="20%" height="300">
+<img src="https://user-images.githubusercontent.com/45858414/78202004-16091380-74ce-11ea-80c3-29ddceb7a28f.PNG width="20%" height="300">
+<img src="https://user-images.githubusercontent.com/45858414/78202006-16091380-74ce-11ea-9291-74168b300b75.PNG width="20%" height="300">
+<img src="https://user-images.githubusercontent.com/45858414/78202007-16a1aa00-74ce-11ea-928d-f7d9517ae5d5.PNG width="20%" height="300">
+</p>
 
-    # salute
-![5  경례](https://user-images.githubusercontent.com/45858414/78202004-16091380-74ce-11ea-80c3-29ddceb7a28f.PNG)
-
-    # Ashamed
-![6  부끄러워 하기](https://user-images.githubusercontent.com/45858414/78202006-16091380-74ce-11ea-9291-74168b300b75.PNG)
-
-    # One turn kick
-![7  한바퀴 돌아차기](https://user-images.githubusercontent.com/45858414/78202007-16a1aa00-74ce-11ea-928d-f7d9517ae5d5.PNG)
-    
-    # hurray
-![8  만세](https://user-images.githubusercontent.com/45858414/78202008-16a1aa00-74ce-11ea-9f1c-2529f80a37db.PNG)
-    
-    # Hand greeting
-![9  손인사](https://user-images.githubusercontent.com/45858414/78202010-173a4080-74ce-11ea-9628-a6e233d25623.PNG)
-    
-    # Sit and rest
-![10  앉아서 쉬기](https://user-images.githubusercontent.com/45858414/78202011-173a4080-74ce-11ea-9178-300aaf340b69.PNG)
-    
-    # stretching
-![11  스트레칭](https://user-images.githubusercontent.com/45858414/78202012-17d2d700-74ce-11ea-808d-cadbc1720fa4.PNG)
-
-    # Little shake body
-![12  흔들흔들](https://user-images.githubusercontent.com/45858414/78201994-13a6b980-74ce-11ea-85e9-f0ed226945df.PNG)
-    
+          9. hurray                  10. Hand greeting           11. Sit and rest    12. stretching    13. Little shake body
+<p align="center">
+<img src="https://user-images.githubusercontent.com/45858414/78202008-16a1aa00-74ce-11ea-9f1c-2529f80a37db.PNG width="20%" height="300">
+<img src="https://user-images.githubusercontent.com/45858414/78202010-173a4080-74ce-11ea-9628-a6e233d25623.PNG width="20%" height="300">
+<img src="https://user-images.githubusercontent.com/45858414/78202011-173a4080-74ce-11ea-9178-300aaf340b69.PNG width="20%" height="300">
+<img src="https://user-images.githubusercontent.com/45858414/78202012-17d2d700-74ce-11ea-808d-cadbc1720fa4.PNG width="20%" height="300">
+<img src="(https://user-images.githubusercontent.com/45858414/78201994-13a6b980-74ce-11ea-85e9-f0ed226945df.PNG width="20%" height="300">
+</p>
+  
  > ## License
 
     NuitrackSDK : Copyright © 2018 Tsukasa SUGIURA Distributed under the MIT License.
