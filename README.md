@@ -57,20 +57,11 @@ Description
     
  > ## Action
        
-    1. Frustration                2. Depression               3. Beg               4. Scratching head
-    
-    
-    
- <img src="https://user-images.githubusercontent.com/45858414/78201915-d6dac280-74cd-11ea-9328-4f3b90a3805e.PNG" width="20%">
-
-    # 
-![1  의기소침 앉기](https://user-images.githubusercontent.com/45858414/78201999-14d7e680-74ce-11ea-9f6b-08fa973a71b2.PNG)
-
-    # 
-![2  빌기](https://user-images.githubusercontent.com/45858414/78202000-14d7e680-74ce-11ea-97cf-235e1fa371df.PNG)
-
-    # 
-![3  머리 긁적이기](https://user-images.githubusercontent.com/45858414/78202001-15707d00-74ce-11ea-9686-b119859e7c78.PNG)
+       1. Frustration                2. Depression               3. Beg               4. Scratching head    
+<img src="https://user-images.githubusercontent.com/45858414/78201915-d6dac280-74cd-11ea-9328-4f3b90a3805e.PNG" width="20%">
+<img src="https://user-images.githubusercontent.com/45858414/78201999-14d7e680-74ce-11ea-9f6b-08fa973a71b2.PNG" width="20%">
+<img src="https://user-images.githubusercontent.com/45858414/78202000-14d7e680-74ce-11ea-97cf-235e1fa371df.PNG" width="20%">
+<img src="https://user-images.githubusercontent.com/45858414/78202001-15707d00-74ce-11ea-9686-b119859e7c78.PNG" width="20%">
 
     # Fall back
 ![4  뒤로 넘어지기](https://user-images.githubusercontent.com/45858414/78202003-15707d00-74ce-11ea-8dad-454e911e1897.PNG)
