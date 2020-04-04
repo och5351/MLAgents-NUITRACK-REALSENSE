@@ -73,7 +73,7 @@ Description
 <img src="https://user-images.githubusercontent.com/45858414/78202007-16a1aa00-74ce-11ea-928d-f7d9517ae5d5.PNG" width="20%" height="300">
 </p>
 
-          9. hurray          10. Hand greeting        11. Sit and rest      12. stretching        13. Little shake body
+          9. hurray          10. Hand greeting        11. Sit and rest       12. stretching         13. Little shake body
 <p align="center">
 <img src="https://user-images.githubusercontent.com/45858414/78202008-16a1aa00-74ce-11ea-9f1c-2529f80a37db.PNG" width="19%" height="300">
 <img src="https://user-images.githubusercontent.com/45858414/78202010-173a4080-74ce-11ea-9628-a6e233d25623.PNG" width="19%" height="300">
