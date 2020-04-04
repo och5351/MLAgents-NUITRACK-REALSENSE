@@ -75,11 +75,11 @@ Description
 
           9. hurray                  10. Hand greeting           11. Sit and rest    12. stretching    13. Little shake body
 <p align="center">
-<img src="https://user-images.githubusercontent.com/45858414/78202008-16a1aa00-74ce-11ea-9f1c-2529f80a37db.PNG" width="20%" height="300">
-<img src="https://user-images.githubusercontent.com/45858414/78202010-173a4080-74ce-11ea-9628-a6e233d25623.PNG" width="20%" height="300">
-<img src="https://user-images.githubusercontent.com/45858414/78202011-173a4080-74ce-11ea-9178-300aaf340b69.PNG" width="20%" height="300">
-<img src="https://user-images.githubusercontent.com/45858414/78202012-17d2d700-74ce-11ea-808d-cadbc1720fa4.PNG" width="20%" height="300">
-<img src="(https://user-images.githubusercontent.com/45858414/78201994-13a6b980-74ce-11ea-85e9-f0ed226945df.PNG" width="20%" height="300">
+<img src="https://user-images.githubusercontent.com/45858414/78202008-16a1aa00-74ce-11ea-9f1c-2529f80a37db.PNG" width="19%" height="300">
+<img src="https://user-images.githubusercontent.com/45858414/78202010-173a4080-74ce-11ea-9628-a6e233d25623.PNG" width="19%" height="300">
+<img src="https://user-images.githubusercontent.com/45858414/78202011-173a4080-74ce-11ea-9178-300aaf340b69.PNG" width="19%" height="300">
+<img src="https://user-images.githubusercontent.com/45858414/78202012-17d2d700-74ce-11ea-808d-cadbc1720fa4.PNG" width="19%" height="300">
+<img src="(https://user-images.githubusercontent.com/45858414/78201994-13a6b980-74ce-11ea-85e9-f0ed226945df.PNG" width="19%" height="300">
 </p>
   
  > ## License
